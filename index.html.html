@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>পরিচয় পত্র - মোঃ জিদান</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /* ওয়েব পেজের ব্যাকগ্রাউন্ড ছবি */
+      background: url('https://i.imgur.com/MApRXur.jpeg') no-repeat center center;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    .id-card {
+      width: 320px;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      text-align: center;
+
+      /* আইডি কার্ডের ব্যাকগ্রাউন্ড ছবি */
+      background: url('https://i.imgur.com/oqkPqPf.jpeg') no-repeat center center;
+      background-size: cover;
+
+      border: 2px solid gold;
+      color: gold;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid gold;
+      object-fit: cover;
+      margin-bottom: 10px;
+      background-color: white;
+    }
+
+    .id-header {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px;
+      border-radius: 5px;
+      color: gold;
+    }
+
+    .id-info {
+      text-align: left;
+      font-size: 16px;
+      margin-bottom: 15px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+      color: gold;
+    }
+
+    .label {
+      font-weight: bold;
+      color: gold;
+    }
+
+    .qr {
+      width: 100px;
+      margin: 10px auto;
+      display: block;
+      background-color: white;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 15px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+    }
+
+    .like {
+      background-color: #FFD700; /* গোল্ডেন */
+    }
+
+    .like:hover {
+      background-color: #e6be00;
+    }
+
+    .dislike {
+      background-color: #d32f2f;
+    }
+
+    .dislike:hover {
+      background-color: #b71c1c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="id-card">
+    <!-- তোমার প্রোফাইল ছবি -->
+    <img src="https://i.imgur.com/YTXbdn0.jpeg" alt="Profile Picture" class="profile-pic">
+
+    <div class="id-header">পরিচয় পত্র</div>
+
+    <div class="id-info">
+      <div><span class="label">নাম:</span> মোঃ জিদান</div>
+      <div><span class="label">বয়স:</span> ১৮</div>
+      <div><span class="label">বাড়ি:</span> কক্সবাজার, চট্টগ্রাম</div>
+      <div><span class="label">পেশা:</span> স্টুডেন্ট এবং সাইবার হ্যাকার</div>
+      <div><span class="label">মোবাইল:</span> 01885582213</div>
+    </div>
+
+    <!-- QR কোড: YouTube Shorts লিংক -->
+    <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://youtube.com/shorts/8MCIItoQuPo?si=ukrOinhsQOiXSkTf" alt="QR Code">
+
+    <!-- Like / Dislike -->
+    <div class="buttons">
+      <a href="https://youtube.com/shorts/a3xXWJhtZPg?si=p-1KkFA8ooaqgd3o" class="btn like">Like</a>
+      <a href="https://youtube.com/shorts/G8keWjSukEU?si=ebEg-Kzeo7djG8pL" class="btn dislike">Dislike</a>
+    </div>
+  </div>
+
+</body>
+</html>
